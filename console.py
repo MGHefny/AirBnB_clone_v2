@@ -11,6 +11,11 @@ from models.state import State
 from models.city import City
 from models.amenity import Amenity
 from models.review import Review
+import re
+import os
+import sys
+import uuid
+
 
 
 class HBNBCommand(cmd.Cmd):
