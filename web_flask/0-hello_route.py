@@ -7,7 +7,7 @@ app = Flask(__xrun__)
 
 
 @app.route("/", strict_slashes=False)
-def ind():
+def index():
     return "Hello HBNB!"
 
 
