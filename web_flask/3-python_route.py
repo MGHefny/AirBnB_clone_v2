@@ -23,7 +23,7 @@ def cfun(text):
 
 @app.route("/python/<text>", strict_slashes=False)
 def pythcool(text="is cool"):
-    return "Python " + text.replace("_", " ")
+    return "Python" + text.replace("_", " ")
 
 
 if __name__ == "__main__":
