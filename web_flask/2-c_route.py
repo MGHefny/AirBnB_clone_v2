@@ -18,7 +18,7 @@ def hb():
 
 @app.route("/c/<text>", strict_slashes=False)
 def cfun(text):
-    return "C" + text.replace("_", " ")
+    return "C " + text.replace("_", " ")
 
 
 if __name__ == "__main__":
