@@ -18,7 +18,7 @@ def hb():
 
 @app.route("/c/<text>", strict_slashes=False)
 def cfun(text):
-    return "C" + text.replace("_", " ")
+    return "C " + text.replace("_", " ")
 
 
 @app.route("/python/<text>", strict_slashes=False)
@@ -33,7 +33,7 @@ def inumb(n):
 
 @app.route("/number_template/<int:n>", strict_slashes=False)
 def numbtemp(n):
-    return render_template("5-number.html", n=n)
+    return render_templates("5-number.html", n=n)
 
 
 if __name__ == "__main__":
